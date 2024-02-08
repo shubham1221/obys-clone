@@ -109,3 +109,10 @@ body {
   width: 100%;
   background-color: #151515;
 }
+
+.page1 #nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.3vw 4.5vw;
+}
