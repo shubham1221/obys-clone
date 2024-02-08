@@ -39,9 +39,9 @@ tl.from(".page1", {
   y: 1600,
   opacity: 0,
   duration: 0.5,
-  ease: power4,
+  ease: Power4,
 });
 
-tl.from(".loader", {
+tl.to(".loader", {
   display: "none",
 });
