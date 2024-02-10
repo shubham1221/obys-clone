@@ -48,4 +48,22 @@ function loadingAnimatio() {
   });
 }
 
+function cursorAnimation() {
+  document.addEventListener("mousemove", (dets) => {
+    gsap.to("#crsr", {
+      left: dets.x,
+      top: dets.y,
+    });
+  });
+
+  // Make Menu Magnet
+
+  Shery.makeMagnet(".nav-part2 h4" /* Element to target.*/, {
+    //Parameters are optional.
+    // ease: "cubic-bezier(0.23, 1, 0.320, 1)",
+    // duration: 1,
+  });
+}
+
 loadingAnimatio();
+cursorAnimation();
