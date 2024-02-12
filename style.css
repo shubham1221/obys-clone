@@ -12,6 +12,10 @@ body {
   height: 100%;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 #crsr {
   height: 4vh;
   width: 4vh;
@@ -240,5 +244,73 @@ body {
   min-height: 100vh;
   position: relative;
   width: 100%;
-  background-color: #2e2e2e;
+  /* background-color: #2e2e2e; */
+  padding-top: 5vh;
+}
+
+.page4-content {
+  width: 70vw;
+  position: relative;
+  margin-left: 28%;
+}
+
+.page4-content h2 {
+  font-size: 7vw;
+  text-transform: uppercase;
+}
+
+.page4-content .underline {
+  height: 2px;
+  width: 100%;
+  background-color: #fff;
+  margin: 5vw 0;
+}
+
+.page4-content .main-p-page4 {
+  font-size: 2.1vw;
+  width: 50%;
+  margin-bottom: 3vw;
+}
+
+.page4-flex {
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+.page4-flex img {
+  width: 50%;
+}
+
+.page4-flex p {
+  font-size: 1vw;
+  width: 20%;
+  margin-left: 1vw;
+}
+
+.page4-blue-section {
+  background-color: #3f7df4;
+  width: 34vw;
+  padding: 3vw;
+  position: relative;
+  margin-top: -38vh;
+  margin-left: 26vw;
+}
+
+.blue-div-elem {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 1.7vw 0;
+  border-bottom: 2px solid #ffffffa2;
+}
+
+.blue-div-elem h4 {
+  font-size: 1.4vw;
+  font-weight: 500;
+}
+
+.blue-div-elem p {
+  width: 40%;
+  font-size: 0.7vw;
 }
