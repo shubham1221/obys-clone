@@ -1,4 +1,8 @@
 @media (max-width: 600px) {
+  body {
+    overflow-x: visible;
+  }
+
   #crsr {
     height: 4vh;
     width: 4vh;
