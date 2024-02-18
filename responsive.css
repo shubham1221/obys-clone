@@ -1,4 +1,17 @@
 @media (max-width: 600px) {
+  #crsr {
+    height: 4vh;
+    width: 4vh;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: fixed;
+    z-index: 9999;
+    mix-blend-mode: difference;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    display: none;
+  }
+
   .page1 {
     height: 60vh;
     width: 100%;

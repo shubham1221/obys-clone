@@ -107,18 +107,18 @@ function loadingAnimatio() {
 
 function cursorAnimation() {
   // For custom cursor
-  // document.addEventListener("mousemove", (dets) => {
-  //   gsap.to("#crsr", {
-  //     left: dets.x,
-  //     top: dets.y,
-  //   });
-  // });
-
-  Shery.mouseFollower({
-    skew: true,
-    eae: "cubic-bazier(0.23, 1, 0.320, 1)",
-    duration: 1,
+  document.addEventListener("mousemove", (dets) => {
+    gsap.to("#crsr", {
+      left: dets.x,
+      top: dets.y,
+    });
   });
+
+  // Shery.mouseFollower({
+  //   skew: true,
+  //   eae: "cubic-bazier(0.23, 1, 0.320, 1)",
+  //   duration: 1,
+  // });
 
   // Make Menu Magnet
 
@@ -135,7 +135,7 @@ function cursorAnimation() {
   // });
 }
 
-function sheryAnimation() {
+function gloryAnimation() {
   Shery.imageEffect(".image-div", {
     style: 5,
     config: {
@@ -173,26 +173,29 @@ function sheryAnimation() {
   });
 }
 
+function flagAnimation() {
+  document.addEventListener("mousemove", function (dets) {
+    gsap.to("#flag", {
+      x: dets.x,
+      y: dets.y,
+    });
+  });
+
+  document.querySelector("#hero3").addEventListener("mouseenter", function () {
+    gsap.to("#flag", {
+      opacity: 1,
+    });
+  });
+
+  document.querySelector("#hero3").addEventListener("mouseleave", function () {
+    gsap.to("#flag", {
+      opacity: 0,
+    });
+  });
+}
+
 loadingAnimatio();
 cursorAnimation();
 locomotiveAnimation();
-sheryAnimation();
-
-document.addEventListener("mousemove", function (dets) {
-  gsap.to("#flag", {
-    x: dets.x,
-    y: dets.y,
-  });
-});
-
-document.querySelector("#hero3").addEventListener("mouseenter", function () {
-  gsap.to("#flag", {
-    opacity: 1,
-  });
-});
-
-document.querySelector("#hero3").addEventListener("mouseleave", function () {
-  gsap.to("#flag", {
-    opacity: 0,
-  });
-});
+gloryAnimation();
+flagAnimation();
