@@ -134,6 +134,7 @@ body {
   height: 96vh;
   width: 100%;
   background-color: #151515;
+  position: relative;
 }
 
 .page1 #nav {
@@ -164,7 +165,7 @@ body {
   display: flex;
   align-items: center;
   position: relative;
-  z-index: 9999;
+  /* z-index: 999; */
 }
 
 /* Page one 01 */
@@ -613,4 +614,21 @@ body {
 ._canvas_container {
   z-index: 999999 !important;
   pointer-events: none;
+}
+
+#flag {
+  height: 25vw;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  left: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#hero3 {
+  /* background-color: red; */
+  z-index: 99;
+  position: relative;
 }
