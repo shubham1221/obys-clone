@@ -458,7 +458,7 @@ body {
 }
 
 .page4-flex p {
-  font-size: 1vw;
+  font-size: 1.2vw;
   width: 20%;
   margin-left: 1vw;
 }
@@ -489,6 +489,8 @@ body {
   width: 40%;
   font-size: 0.7vw;
 }
+
+/* Page 5 */
 
 .page5 {
   min-height: 100vh;
